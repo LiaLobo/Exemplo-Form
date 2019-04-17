@@ -1,0 +1,55 @@
+body{
+    background-image: url("https://t2.rg.ltmcdn.com/pt/images/1/7/3/img_pipoca_com_manteiga_na_panela_6371_600.jpg");
+    background-size: cover;
+}
+
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 50pt; 
+    background-color: aqua;
+    
+} 
+
+#formulario{
+    background-color: antiquewhite;
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    border: black 3px dashed;
+}
+
+form{ 
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+label, input {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 20pt; 
+}
+
+input{
+    border-radius: 8px 8px;
+    border: solid black;
+    outline: none;
+}
+
+.botao {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60pt;
+    color: red;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
