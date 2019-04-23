@@ -1,17 +1,32 @@
 body{
     background-image: url("https://t2.rg.ltmcdn.com/pt/images/1/7/3/img_pipoca_com_manteiga_na_panela_6371_600.jpg");
     background-size: cover;
+    margin: 0%;
+    background-repeat: no-repeat;
+    height: 100vh; /*100 por cento da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 *{
     font-family: 'Dancing Script', cursive;
 }
 
+header {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 h1{
     text-align: center;
     font-size: 50pt; 
     background-color: aqua;
+    margin-top: 0%;
+
     
 } 
 
@@ -24,15 +39,26 @@ h1{
 }
 
 form{ 
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    /* width: 50%; */
+    /* display: flex;  alinha os itens na vertical*/
+    /* flex-direction: column; */
+    /* justify-content: start; alinha os itens na horizontal */
 }
 
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 label, input {
-    text-align: center;
+    width: 30%;
     font-family: 'Anton', sans-serif;
     font-size: 20pt; 
+    margin: 8px;
 }
 
 input{
@@ -51,5 +77,20 @@ input{
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    justify
+}
 
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer {
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
 }
