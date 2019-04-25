@@ -77,7 +77,11 @@ input{
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    justify
+}
+
+.botao:hover { /*para interação com os intens quando coloca o cursor em cima*/
+    background-color: white;
+    transition: linear 2s;
 }
 
 nav {
