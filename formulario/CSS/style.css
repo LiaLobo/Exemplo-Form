@@ -23,7 +23,7 @@ header {
 
 h1{
     text-align: center;
-    font-size: 50pt; 
+    font-size: 25pt; 
     background-color: aqua;
     margin-top: 0%;
 
@@ -77,11 +77,15 @@ input{
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    animation: DireitaEsquerda 5s infinite;
 }
 
 .botao:hover { /*para interação com os intens quando coloca o cursor em cima*/
     background-color: white;
     transition: linear 2s;
+    animation: jogaPraCima 0.3s infinite;
+    /* transform: rotate(90deg); */
+    /* transform: translateX(20px); */
 }
 
 nav {
@@ -98,3 +102,41 @@ footer {
     align-items: center;
     margin-bottom: 0%;
 }
+
+@keyframes DireitaEsquerda {
+    0% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+        background-color: darkgreen;
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes jogaPraCima {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translate(50px);
+    }
+
+}
+
+@media only screen and (min-width:600px){
+    h1 {
+        font-size: 50pt; 
+    }
+}
+
+@media only screen and (min-width:1000px){
+    h1 {
+        font-size: 70pt; 
+    }
+     }
